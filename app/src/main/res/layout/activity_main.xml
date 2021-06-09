@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.MainActivity">
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="?android:attr/progressBarStyle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/moviesRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/errorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/colorErrorMessages"
+        android:textSize="@dimen/errorMessagesTextSize"
+        android:gravity="center"
+        android:text="@string/error_msg"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+
+</FrameLayout>

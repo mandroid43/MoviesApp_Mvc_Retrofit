@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="xtraLargeTextSize">24sp</dimen>
+    <dimen name="largeTextSize">20sp</dimen>
+    <dimen name="betweenmedlargeTextSize">18sp</dimen>
+    <dimen name="mediumTextSize">@dimen/smallTextSize</dimen>
+    <dimen name="smallTextSize">15sp</dimen>
+    <dimen name="verySmallTextSize">12sp</dimen>
+
+    <dimen name="errorMessagesTextSize">@dimen/largeTextSize</dimen>
+
+
+</resources>
